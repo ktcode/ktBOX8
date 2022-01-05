@@ -14,8 +14,8 @@ th = 2;
 X = 103;
 
 
-a();
-b();
+//a();
+//b();
 c();
 
 module a()
@@ -126,7 +126,7 @@ difference() //color( "Black" )
     {
         translate([0, 0, 0]) scale([1, 0.9, 1]) rotate_extrude(angle=180, convexity=10, $fn=100) translate([X/2, 0, 0]) circle(5+2);
         rotate([0, 180, 180]) rotate_extrude(angle=24, convexity=10, $fn=100) translate([X/2, 0, 0]) circle(5+2);
-        rotate([0, 0, -24]) translate([X/2, 0, 0]) rotate([90, 0, 0]) cylinder(r=5+2, h=72, $fn=100);
+        rotate([0, 0, -24]) translate([X/2, 0, 0]) rotate([90, 0, 0]) cylinder(r=5+2, h=30, $fn=100);
         rotate([0, 0, 180]) rotate_extrude(angle=24, convexity=10, $fn=100) translate([X/2, 0, 0]) circle(5+2);
         rotate([0, 0, 24]) translate([-X/2, 0, 0]) rotate([90, 0, 0]) cylinder(r=5+2, h=30, $fn=100);
         
@@ -136,13 +136,13 @@ difference() //color( "Black" )
         translate([-47/2, -93+4, 0]) cube([47, 25, 10]);
         translate([0, -80.5+4, 17]) rotate([180, 0, 0]) rotate([0, 90, 0]) linear_extrude(height=47, center=true) circle(14.4, $fn=3);
         
-        translate([ 41, -46.5, 2]) rotate([0, 0,-23]) resize(newsize=[18, 95, 20]) sphere(r=100);
+        translate([ 41, -45, 0]) rotate([0, 0,-24]) resize(newsize=[18, 95, 30]) sphere(r=100);
         translate([ 28, -70, 0]) rotate([0, 0,-18]) resize(newsize=[17, 40, 40]) sphere(r=100);
         translate([ 26, -74, 0]) rotate([0, -15,-40]) resize(newsize=[17, 35, 50]) sphere(r=100);
     }
     translate([0, 0, 0]) scale([1, 0.9, 1]) rotate_extrude(angle=180, convexity=10, $fn=100) translate([X/2, 0, 0]) circle(5);
     rotate([0, 180, 180]) rotate_extrude(angle=24, convexity=10, $fn=100) translate([X/2, 0, 0]) circle(5);
-    rotate([0, 0, -24]) translate([X/2, 0, 0]) rotate([90, 0, 0]) cylinder(r=5, h=72-1, $fn=100);
+    rotate([0, 0, -24]) translate([X/2, 0, 0]) rotate([90, 0, 0]) cylinder(r=5, h=30, $fn=100);
     rotate([0, 0, 180]) rotate_extrude(angle=24, convexity=10, $fn=100) translate([X/2, 0, 0]) circle(5);
     rotate([0, 0, 24]) translate([-X/2, 0, 0]) rotate([90, 0, 0]) cylinder(r=5, h=30, $fn=100);
     
@@ -152,7 +152,7 @@ difference() //color( "Black" )
     translate([-(47-4)/2, -93+1+4, -gap1]) cube([47-4, 25-2, 10]);
     translate([0, -80.5+4, 17-0.5]) rotate([180, 0, 0]) rotate([0, 90, 0]) linear_extrude(height=47-4, center=true) circle(14.4-1, $fn=3);
     
-    translate([ 41, -46.5, 2]) rotate([0, 0,-23]) resize(newsize=[18-2, 95-2, 20-2]) sphere(r=100);
+    translate([ 41, -45, 0]) rotate([0, 0,-24]) resize(newsize=[18-2, 95-2, 30-2]) sphere(r=100);
     translate([ 28, -70, 0]) rotate([0, 0,-18]) resize(newsize=[17-2, 40-2, 40-2]) sphere(r=100);
     translate([ 26, -74, 0]) rotate([0, -15,-40]) resize(newsize=[17-2, 35-2, 50-2]) sphere(r=100);
     
